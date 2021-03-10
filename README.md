@@ -2,6 +2,6 @@
 
 A random password generator written in JavaScript that generates a random password based on user-selected criteria.
 
-![Home Page](./assets/images/screencapture.png?raw=true)
+![Home Page](./assets/screencapture.png?raw=true)
 
 Application Deployed At: https://gurkiratsaini.github.io/pwd-genny
