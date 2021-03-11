@@ -4,6 +4,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  if(password === undefined){
+    password = `Please click "Generate Password" to try again.`;
+  }
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -61,7 +64,6 @@ function generatePassword() {
   for (i=0; i<pwdLength ; i++) {
     generatedPwd += pwd.charAt(Math.floor(Math.random() * pwd.length));
   }
-
   
   // return generated password
   return generatedPwd;
